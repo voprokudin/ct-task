@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/single_item_padding_large"
+    android:paddingRight="@dimen/single_item_padding_large"
+    android:background="@color/colorWhite"
+    android:padding="@dimen/single_item_padding_medium">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_details_currency"
+                android:layout_width="@dimen/avatar_large"
+                android:layout_height="@dimen/avatar_large"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:background="@drawable/avatar"
+                android:textSize="@dimen/font_size_xlarge"
+                android:textColor="@color/colorWhite"
+                android:layout_marginTop="@dimen/single_item_padding_large"/>
+
+            <TextView
+                android:id="@+id/tv_details_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_details_currency"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/single_item_padding_medium"
+                android:textStyle="bold"
+                android:textSize="@dimen/font_size_large" />
+
+            <TextView
+                android:id="@+id/tv_details_deleted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_details_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/single_item_padding_medium"
+                android:textSize="@dimen/font_size_medium" />
+
+            <TextView
+                android:id="@+id/tv_details_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_details_deleted"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/single_item_padding_medium"
+                android:textSize="@dimen/font_size_medium"/>
+
+            <LinearLayout
+                android:id="@+id/layout_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/tv_details_id"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/single_item_padding_medium">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/created"
+                        android:textSize="@dimen/font_size_medium"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="@dimen/single_item_padding_large"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_details_created_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/single_item_padding_medium"
+                        android:textSize="@dimen/font_size_medium" />
+
+                    <TextView
+                        android:id="@+id/tv_details_created_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/single_item_padding_medium"
+                        android:textSize="@dimen/font_size_medium"
+                        android:layout_marginBottom="@dimen/single_item_padding_medium" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

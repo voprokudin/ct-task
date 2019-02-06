@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CustomerTimes</string>
+    <string name="results">Results</string>
+    <string name="successfull_inserting">Data has been inserted successfully</string>
+    <string name="error_loading_data">Error while downloading data</string>
+    <string name="no_data">NO DATA</string>
+    <string name="details">Details</string>
+    <string name="name">Name:</string>
+    <string name="deleted_status">Deleted status:</string>
+    <string name="id">ID:</string>
+    <string name="created">Created:</string>
+</resources>
